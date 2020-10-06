@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'bmi_result.dart';
+import 'about.dart';
 import 'package:intl/intl.dart';
 
 class InputBMI extends StatefulWidget {
@@ -42,7 +43,21 @@ class _InputBMIState extends State<InputBMI> {
         ),
         title: Text('BMI Checker'),
         actions: [
-    
+        IconButton(
+            icon: Icon(
+              Icons.info_outline,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AboutRoute()),
+              );
+            },
+          ),
+          SizedBox(
+            width: 15,
+          )
         ],
       ),
       body: SingleChildScrollView(
