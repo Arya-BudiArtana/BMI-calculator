@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'bmi.dart';
-
+import 'get_started.dart';
 void main() => runApp(
   MaterialApp(
     theme: ThemeData.light(),
-    home:  InputBMI(),
+    home:  GetStarted(),
   )
 
 );
