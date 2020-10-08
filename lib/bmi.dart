@@ -340,16 +340,6 @@ class _InputBMIState extends State<InputBMI> {
               margin: EdgeInsets.only(left: 10, right: 10, bottom: 20),
               child: RaisedButton(
               onPressed: () {
-                    if (_valGender != '' &&
-                      nama != null &&
-                      tahun != null &&
-                      bulan != null &&
-                      tanggal != null &&
-                      tinggi != null &&
-                      berat != null) {
-                    if ((tanggal > 0 && tanggal <= 31) &&
-                        (bulan > 0 && bulan <= 12) &&
-                        (tahun > 1900 && tahun < 2020)) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -363,8 +353,7 @@ class _InputBMIState extends State<InputBMI> {
                                 tahun: tahun,
                                 year_now: year)),
                       );
-                    }
-                  } },
+                    },
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(80.0),
               ),
